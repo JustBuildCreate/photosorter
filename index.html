@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhotoSorter</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+      max-width: 40rem;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+    }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .tag { opacity: 0.75; margin-top: 0; }
+    nav a { margin-right: 1rem; }
+    ul { padding-left: 1.25rem; }
+  </style>
+</head>
+<body>
+  <h1>PhotoSorter</h1>
+  <p class="tag">Personal Windows app for a curated photo screensaver album</p>
+  <nav>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="./terms.html">Terms of Service</a>
+  </nav>
+
+  <p>
+    PhotoSorter runs on your PC. It scores and organizes photos from local libraries
+    (for example iCloud and disk folders), builds a curated screensaver pool, and can
+    sync that pool to a Google Photos album that you control.
+  </p>
+  <p>It is intended for personal / household use by the developer and people they know.</p>
+
+  <h2>Google Photos access</h2>
+  <ul>
+    <li>Sign-in uses Google OAuth on this machine (desktop app flow).</li>
+    <li>PhotoSorter only uses Photos Library scopes needed to manage an
+        <strong>app-created</strong> album and related cleanup album.</li>
+    <li>Your photo library is not sent to third-party vision/cloud AI APIs for scoring;
+        local models run on the PC.</li>
+    <li>The OAuth token is stored locally next to the app data folder.</li>
+  </ul>
+
+  <p>
+    More detail:
+    <a href="./privacy.html">Privacy Policy</a> ·
+    <a href="./terms.html">Terms of Service</a>
+  </p>
+</body>
+</html>

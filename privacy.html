@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhotoSorter Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+      max-width: 40rem;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+    }
+    nav a { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="./">Home</a>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="./terms.html">Terms of Service</a>
+  </nav>
+
+  <h1>Privacy Policy</h1>
+  <p><em>Last updated: 18 November 2026</em></p>
+
+  <p>
+    PhotoSorter (“the app”) is a personal desktop application. This policy describes how
+    it handles information when you use Google sign-in and Google Photos sync.
+  </p>
+
+  <h2>Who the app is for</h2>
+  <p>
+    The app is operated for personal / household use by the developer (GitHub:
+    <a href="https://github.com/JustBuildCreate">JustBuildCreate</a>) and a small number
+    of people known to them. It is not offered as a public multi-tenant service.
+  </p>
+
+  <h2>Data the app accesses</h2>
+  <ul>
+    <li><strong>Local photos:</strong> files you configure as sources on your computer
+        (read to score/copy; originals are not deleted by the app).</li>
+    <li><strong>Google Account (OAuth):</strong> when you choose Sign in, Google provides
+        tokens so the app can call the Photos Library API with the scopes you approve.</li>
+    <li><strong>Google Photos (app-created data):</strong> the app can create and update
+        albums and media items that <em>this app</em> created (screensaver album and
+        related cleanup album). It does not request full library browse of all your Photos.</li>
+  </ul>
+
+  <h2>How Google user data is used</h2>
+  <p>Google Photos data is used only to:</p>
+  <ul>
+    <li>Upload curated screensaver images into an app-created album</li>
+    <li>Add/remove items in that album to match the local pool</li>
+    <li>Maintain a separate app-created “trash me” cleanup album for items leaving the pool</li>
+  </ul>
+  <p>
+    The app does <strong>not</strong> sell Google user data, use it for advertising, or
+    share it with third parties for unrelated purposes.
+  </p>
+
+  <h2>Storage</h2>
+  <ul>
+    <li>OAuth client config and refresh/access tokens are stored in the app’s local data
+        folder on your PC (for example <code>PhotoSorterData</code>).</li>
+    <li>Local SQLite state tracks which photos are in the pool and which Google media IDs
+        the app created.</li>
+    <li>Scoring uses local AI models on your machine; your photo library is not uploaded
+        to third-party cloud vision APIs.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>
+    Aside from the Google APIs you authorize, the app does not transmit your Google Photos
+    content to other online services. Network use for Google sync goes to Google’s Photos
+    Library API endpoints.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <ul>
+    <li>You can Sign out in the app to delete the local Google token file.</li>
+    <li>You can revoke access at
+        <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</li>
+    <li>App-created albums/items may remain in your Google Photos until you delete them
+        in the Photos UI (or via the app’s normal sync/cleanup flow).</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy: open an issue on the public site repo
+    <a href="https://github.com/JustBuildCreate/photosorter">github.com/JustBuildCreate/photosorter</a>
+    or contact the developer via the email configured on the Google Cloud OAuth consent screen.
+  </p>
+</body>
+</html>
